@@ -3,7 +3,6 @@
 /**
  * main - prints the sizez of the various
  * types on the computer it is compilled
- * and run on 
  *
  * Return: Always 0.
  */
