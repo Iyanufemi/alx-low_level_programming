@@ -1,7 +1,8 @@
 #include <unistd.h>
 
 /**
- * main - this program prints exactly "and that piece of are is useful" - Dora Korpar, 2015-10-19"
+ * main - this program prints exactly "and that piece of are is useful" 
+ *- Dora Korpar, 2015-10-19"
  *
  * Return: Always 1.
  */
