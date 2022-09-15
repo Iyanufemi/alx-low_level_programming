@@ -1,27 +1,22 @@
 #include "stdio.h"
 
 /**
- * main - prints a number with _putchar
- * @n: Number to print
- *
+ * main - Prints largest prime factor
  * Return: Always 0
  */
 int main(void)
 {
-	long prime = 612852475143, divisor;
+	long int n, z;
 
-		while (divisor < (prime / 2))
+	n = 612852475143;
+	for (z = 2; z <= n; z++)
+	{
+		if (n % z == 0)
 		{
-			if ((prime % 2) == 0)
-			{
-				prime /= 2;
-				continue;
-			}
-		}	
-		for (divisor = 3; divisor < (prime / 2); divisor += 2)
-		{
-			if ((prime % divisor) == 0)
-				prime /= divisor;
+			n /= z;
+			z--;
 		}
-	printf("%ld\n", prime);
+	}
+	printf("%ld\n", z);
+	return (0);
 }
