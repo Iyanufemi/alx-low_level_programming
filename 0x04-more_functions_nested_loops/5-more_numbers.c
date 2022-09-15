@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * more_numbers - prints numbers from 0 to 14 ten times
- * Return: no return
+ * more_numbers - prints 01234567891011121314\n x10
+ * Return: void
  */
+
 void more_numbers(void)
 {
 	char a, b, c, i;
