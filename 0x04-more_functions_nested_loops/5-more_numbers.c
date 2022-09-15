@@ -7,17 +7,20 @@
  */
 void more_numbers(void)
 {
-	int row, column;
+	char a, b, c, i;
 
-	for (row = 1; row <= 10; row++)
+	for (i = 0; i < 10; i++)
 	{
-		for (column = 0; column <= 14; column++)
+		for (c = 0; c <= 14; c++)
 		{
-			if (column / 10 != 0)
+			if (c < 10)
+				b = c;
+			else
 			{
-				_putchar('0' + column / 10);
+				a = c / 10; b = c % 10;
+				_putchar('0' + a);
 			}
-			_putchar('0' + column % 10);
+			_putchar('0' + b);
 		}
 		_putchar('\n');
 	}
