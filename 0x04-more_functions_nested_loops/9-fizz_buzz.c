@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int a;
+	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
@@ -34,5 +34,6 @@ int main(void)
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
