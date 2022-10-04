@@ -1,22 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - check the code for ALX School students.
- * Return: Always 0.
+ * _strdup - function returns a pointer to a new string
+ * which is a duplicate of the string str
+ * @str: string input pointer to the string
+ * Return: NULL if str = NULL, A pointer to a new string.
  */
-int main(void)
+char *_strdup(char *str)
 {
-	char *s;
+	char *duplicate;
+	int index, len = 0;
 
-	s = _strdup("ALX SE");
-	if (s == NULL)
+	if (str == NULL)
 	{
-		printf("failed to allocate memory\n");
-		return (1);
+		return (NULL);
 	}
-	printf("%s\n", s);
-	free(s);
-	return (0);
+	for (index = 0; str[index]; index++)
+	{
+		len++;
+	}
+	duplicate = malloc(sizeof(char) * (len + 1));
+	if (duplicate == NULL)
+	{
+		return (NULL);
+	}
+	for (index = 0; str[index]; index++)
+	{
+		duplicate[index] = str[index];
+	}
+	duplicate[len] = '\0';
+	return (duplicate);
 }
