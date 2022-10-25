@@ -1,19 +1,3 @@
-yonasleykun27
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x13-more_singly_linked_lists/lists.h
-@yonasleykun27
-yonasleykun27 task 0&1
- 1 contributor
-50 lines (45 sloc)  1.27 KB
 #ifndef _LISTS_
 #define _LISTS_
 
