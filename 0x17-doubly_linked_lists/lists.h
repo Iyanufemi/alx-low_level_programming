@@ -1,4 +1,3 @@
-lines (29 sloc)  901 Bytes
 #ifndef _LISTS_
 #define _LISTS_
 
